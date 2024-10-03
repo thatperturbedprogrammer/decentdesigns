@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function UI() {
   return (
     <>
-      <div className="flex items-center m-3 gap-2">
+      <div className="flex items-center m-3 gap-2 ">
         <div className="border rounded-xl w-max hover:bg-gray-600 cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -14,13 +14,13 @@ export default function UI() {
             <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
           </svg>
         </div>
-        <Link href="/ui" className="text-xl text-sky-300 p-2 m-1 shadow-sm shadow-blue-300 rounded-2xl">Chat UI</Link>
+        <Link href="/ui" className="text-xl text-sky-300 p-2 m-1 shadow-sm shadow-blue-400 rounded-2xl hover:shadow-lg hover:shadow-blue-500">Chat UI</Link>
       </div>
 
       {/* Main home body div */}
       <div className="mx-auto p-3 border-zinc-700 ">
-        <div className="relative shadow-sm shadow-blue-300 rounded-lg">
-          <h3 className="items-center m-2 gap-2 text-4xl text-white p-4 ">
+        <div className="relative shadow-sm shadow-blue-400 rounded-lg hover:shadow-lg hover:shadow-blue-500 cursor-pointer">
+          <h3 className="items-center m-2 gap-2 text-4xl text-white p-4">
             How may I help you today, Abhay?
           </h3>
         </div>
@@ -51,7 +51,7 @@ export default function UI() {
               
             </div>
             {/* Text at the bottom */}
-            <div className="p-4 text-4xl text-center relative align-bottom">
+            <div className="p-4 text-4xl text-center relative align-bottom top-[82%]">
                 Chat with AI
             </div>
           </div>
@@ -62,7 +62,7 @@ export default function UI() {
               {/* <!-- First Div --> */}
               <div className="p-4 bg-red-400 h-[240px] w-[500px] gap-3 rounded-3xl m-1 relative shadow-lg shadow-red-700 cursor-pointer">
                 {/* Text at the bottom */}
-              <div className="text-4xl text-center align-bottom">
+              <div className="relative text-3xl text-center top-[80%]">
                 Create AI Image
               </div>
                 {/* <!-- SVG 1 - Top Left Corner --> */}
@@ -89,7 +89,7 @@ export default function UI() {
               {/* 2nd */}
               <div className="p-4 bg-blue-400 h-[240px] w-[500px] gap-3 rounded-3xl m-1 relative shadow-lg shadow-blue-700 cursor-pointer">
                 {/* Text at the bottom */}
-              <div className="text-4xl text-center align-bottom">
+              <div className="relative text-3xl text-center top-[80%]">
                 Create AI Video
               </div>
                 {/* <!-- SVG 1 - Top Left Corner --> */}
